@@ -60,8 +60,11 @@ h3 {
 }
 .diagram {
   width: 1000px;
-  margin: 30px auto;
-  background-color: #f2eeee;
+  padding: {
+    top: 15px;
+    bottom: 10px;
+  }
+  margin: 0 auto;
 }
 .wind svg {
   fill: $diagram-wind-color;

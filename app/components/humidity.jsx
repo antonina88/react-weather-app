@@ -5,7 +5,6 @@ export default class Humidity extends Component {
   render() {
     const { forest, convertDate } = this.props;
     let itemDate;
-    
     const data = forest.map(element => {
       itemDate = convertDate(element.date);
         return {
