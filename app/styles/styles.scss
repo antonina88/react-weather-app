@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$diagram-temper-color: rgba(247, 5, 5, .7);
+$diagram-humidity-color: #278e3e;
+$diagram-pressure-color: rgba(228, 146, 24, .82);
+$diagram-wind-color: #92c6dc;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+   height: 100%;
+}
+.content{
+  min-height: calc(100vh - 80px);
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  form {
+    margin-right: 15px;
+  }
+}
+.data-container{
+  padding: 10px;
+  .date {
+    margin-top: 20px;
+  }
+}
+.title, .summary {
+  display: flex;
+  align-items: center;
+}
+h1, h2 {
+  text-align: center;
+}
+h3 {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.summary {
+  justify-content: center;
+  margin-left: -20px;
+}
+.parametres {
+  display: flex;
+  justify-content: center;
+  p {
+    margin: 5px;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+.diagram {
+  width: 1000px;
+  margin: 30px auto;
+  background-color: #f2eeee;
+}
+.wind svg {
+  fill: $diagram-wind-color;
+}
+.pressure svg {
+  fill: $diagram-pressure-color;
+}
+.temperature svg {
+  fill: $diagram-temper-color;
+}
+.humidity svg {
+  fill: $diagram-humidity-color;
+}
+footer {
+  background-color: #00bcd4;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  ul {
+    list-style: none;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
