@@ -5,8 +5,8 @@ import filter from './filter';
 import paramDiagram from './paramdiagram';
 
 export default combineReducers({
-	weatherConditions,
-	locality,
-	filter,
-	paramDiagram
+  weatherConditions,
+  locality,
+  filter,
+  paramDiagram
 });

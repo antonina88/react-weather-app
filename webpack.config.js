@@ -105,7 +105,7 @@ module.exports = {
                         options: {
                             limit: 10000,
                             minetype: 'application/font-woff',
-                            name: 'assets/fonts/[name].[ext]'
+                            name: 'fonts/[name].[ext]'
                         }
                     }
                 ]
@@ -116,7 +116,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'assets/fonts/[name].[ext]'
+                            name: 'fonts/[name].[ext]'
                         }
                     }
                 ]
